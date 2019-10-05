@@ -62,6 +62,26 @@ $ hexo deploy
     hexo deploy
 ```
 
+修改config.yml中的deploy参数，分支应为master, 这样就可以新建其他分支保存源码了，master存折deploy信息
+于是我新建了一个分支
+```
+
+git init
+
+git checkout -b source0
+
+git commit -am "ff"
+
+git remote add origin https://github.com/offshoreWT/offshoreWT.github.io/ 
+
+git push origin source0
+
+
+```
+
+source0或者sourceN以后用来存储各个版本的源文件信息
+
+
 不要忘了，每次写完最好都把源文件上传一下
 
 ```
