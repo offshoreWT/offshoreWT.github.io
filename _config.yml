@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 网上书屋
 subtitle:
 description:
 keywords:
-author: John Doe
+author: Ye Zhaoliang
 language: en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://offshorewt.github.io 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -79,5 +79,12 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/offshoreWT/offshoreWT.github.io
-  branch: master
+  repo: 
+    github: https://github.com/offshoreWT/offshoreWT.github.io,master
+    coding: https://git.coding.net/yezhaoliang/offshoreWT.git,master
+
+    ### by yzl 20191007 21:49
+highligt:
+    enable: true
+    line_number: true
+    tab_replace:
