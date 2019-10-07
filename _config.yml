@@ -74,7 +74,22 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+# Schemes  next give you for options
+# scheme: Muse
+# scheme: Mist
+scheme: Muse
+#scheme: Gemini
 
+
+menu:
+    home: / || home                     // 主页  
+    about: /about/ || user            // 关于  
+    tags: /tags/ || tags               // 标签
+    categories: /categories/ || th     // 类别   
+    archives: /archives/ || archive     // 存档  
+    schedule: /schedule/ || calendar   // 日程表 
+    sitemap: /sitemap.xml || sitemap   // 站点地图
+    commonweal: /404/ || heartbeat     // 404页面  
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -88,3 +103,13 @@ highligt:
     enable: true
     line_number: true
     tab_replace:
+
+CloudCalendar:
+  enable: true
+  language: zh-CN
+  single: true
+  root: /calendar/
+  calendarCdn: //cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js
+  langCdn: //cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js
+  #disableSidebar: false
+

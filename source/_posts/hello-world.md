@@ -161,6 +161,41 @@ gulp使用[terser][7]替换掉老早之前的uglify,否则编译js不通过
 var uglify = require('gulp-terser'); //不要用uglify了
 
 ```
+
+### 定制menu
+
+[ config中定制你的menu ][8]
+
+注意是在next 主题目录下面的config.yml配置你的menu和布局，这种设计方式很好!
+```
+
+menu:
+    home: / || home                     // 主页  
+    about: /about/ || user            // 关于  
+    tags: /tags/ || tags               // 标签
+    categories: /categories/ || th     // 类别   
+    archives: /archives/ || archive     // 存档  
+    schedule: /schedule/ || calendar   // 日程表 
+    sitemap: /sitemap.xml || sitemap   // 站点地图
+    commonweal: /404/ || heartbeat     // 404页面  
+
+```
+
+```sh
+
+D:\blog\myblog>hexo new page about
+INFO  Created: D:\blog\myblog\source\about\index.md
+
+D:\blog\myblog>hexo new page tags
+INFO  Created: D:\blog\myblog\source\tags\index.md
+
+D:\blog\myblog>hexo new page categories
+INFO  Created: D:\blog\myblog\source\categories\index.md
+
+D:\blog\myblog>hexo new page archives
+INFO  Created: D:\blog\myblog\source\archives\index.md
+
+```
 ### Next主题
 [only deploy][5]
 
@@ -171,3 +206,4 @@ var uglify = require('gulp-terser'); //不要用uglify了
 [5]:https://spacejmmy.github.io/2017/08/20/2017-08-20-first-post/ 
 [6]:https://hexo-guide.readthedocs.io/zh_CN/latest/advanced/[gulp]%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html 
 [7]:https://stackoverflow.com/questions/38886840/how-to-solve-this-minification-error-on-gulp/38886965 
+[8]:https://hexo-guide.readthedocs.io/zh_CN/latest/theme/[NexT]%E8%8F%9C%E5%8D%95%E6%A0%8F.html 
